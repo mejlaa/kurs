@@ -1,0 +1,54 @@
+/* body {
+  margin: 0;
+  padding: 0;
+} */
+#bounce {
+  width: 0px;
+  height: 0px;
+  background: red;
+  position: relative;
+  animation-name: bounce;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+#heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  margin: auto;
+  animation-name: heart;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 100px;
+  width: 50px;
+  height: 80px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+#heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
