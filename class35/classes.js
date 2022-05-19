@@ -28,3 +28,6 @@ class Wolf extends Animal {
 const wolfObj = new Wolf("nidzo", 19, true);
 console.log(wolfObj.roar());
 console.log(wolfObj.eat());
+console.log(wolfObj.eat());
+console.log(wolfObj.eat());
+console.log(wolfObj.eat());
