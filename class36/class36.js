@@ -53,7 +53,7 @@ const users = [
 Array.prototype.newFind = function (callback) {
   let result = [];
 
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < this.length; i++) {
     const element = this[i];
     if (callback(element, i, this)) {
       return element;
